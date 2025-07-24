@@ -1,0 +1,26 @@
+:root{
+    --color-principal: #cc0033;
+    --color-secundario: #f2f2f2;
+}
+
+header{
+    background-color: var(--color-principal);
+}
+
+.nav-link{
+    color: var(--color-secundario);
+}
+
+#hero{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/hero.jpg');
+    background-size: cover;
+    background-position-y: bottom;
+    background-attachment: fixed;
+    color: var(--color-secundario);
+    height: 30vh;
+}
+
+#hero h1{
+    font-size: 2.5rem;
+    border-bottom: var(--color-principal) 1rem double;
+}
