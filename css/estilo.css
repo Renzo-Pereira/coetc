@@ -24,3 +24,12 @@ header{
     font-size: 2.5rem;
     border-bottom: var(--color-principal) 1rem double;
 }
+
+footer{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+#h2-footer{
+    border-bottom: var(--color-secundario) 0.5rem double;
+}
