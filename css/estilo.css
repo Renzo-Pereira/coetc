@@ -1,18 +1,28 @@
-:root{
+:root {
     --color-principal: #cc0033;
     --color-secundario: #f2f2f2;
 }
 
-header{
+header {
     background-color: var(--color-principal);
 }
 
-.nav-link{
+header p {
+    color: var(--color-secundario);
+    font-size: 10px;
+    margin: 0;
+}
+
+header i{
     color: var(--color-secundario);
 }
 
-#hero{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/hero.jpg');
+.nav-link {
+    color: var(--color-secundario);
+}
+
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/hero.jpg');
     background-size: cover;
     background-position-y: bottom;
     background-attachment: fixed;
@@ -20,16 +30,61 @@ header{
     height: 30vh;
 }
 
-#hero h1{
-    font-size: 2.5rem;
+#hero h1 {
+    font-size: 1.5rem;
     border-bottom: var(--color-principal) 1rem double;
 }
 
-footer{
+@media (min-width: 768px) {
+    header img {
+        height: auto;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+        border-bottom: var(--color-principal) 1rem double;
+    }
+}
+
+footer {
     background-color: var(--color-principal);
     color: var(--color-secundario);
 }
 
-#h2-footer{
+#h2-footer {
+    border-bottom: var(--color-secundario) 0.5rem double;
+}
+
+#main-content article i {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: var(--color-secundario) 2px solid;
+    font-size: 60px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#main-content article i:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border: var(--color-principal) 2px solid;
+    width: 130px;
+    height: 130px;
+}
+
+#contacto {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    margin-bottom: 0;
+    border-bottom: var(--color-secundario) 1px solid;
+}
+
+#contacto h2 {
     border-bottom: var(--color-secundario) 0.5rem double;
 }

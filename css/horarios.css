@@ -1,9 +1,58 @@
-:root{
+:root {
     --color-principal: #cc0033;
     --color-secundario: #f2f2f2;
 }
 
-#h2-horarios{
+#h2-horarios {
     background-color: var(--color-principal);
     color: var(--color-secundario);
+}
+
+.btn-primary {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: var(--color-secundario) 1px solid;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border: var(--color-principal) 1px solid;
+}
+
+.btn-primary:active {
+    box-shadow: 0 0 0 0.1rem rgba(204, 0, 51, 0.5);
+    border: var(--color-secundario) 1px solid !important;
+    background-color: var(--color-principal) !important;
+}
+
+.btn-secondary {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border: var(--color-principal) 1px solid;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: var(--color-secundario) 1px solid;
+}
+
+.btn-secondary:active {
+    box-shadow: 0 0 0 0.1rem rgba(204, 0, 51, 0.5);
+    border: var(--color-secundario) 1px solid !important;
+    background-color: var(--color-principal) !important;
+}
+
+.form-control {
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-principal);
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: var(--color-principal) ;
+    box-shadow: 0 0 0 0.2rem rgba(204, 0, 51, 0.25) ;
 }

@@ -1,9 +1,19 @@
-:root{
+:root {
     --color-principal: #cc0033;
     --color-secundario: #f2f2f2;
 }
 
-#h2-historia{
+main {
+        border-bottom: var(--color-principal) solid 0.5rem;
+        margin-bottom: 1rem;
+}
+
+#h2-historia {
     background-color: var(--color-principal);
     color: var(--color-secundario);
+}
+
+figcaption {
+    display: inline-block;
+    border-bottom: var(--color-principal) double 0.5rem;
 }
