@@ -1,9 +1,0 @@
-:root {
-    --color-principal: #cc0033;
-    --color-secundario: #f2f2f2;
-}
-
-#h2-rsa{
-    background-color: var(--color-principal);
-    color: var(--color-secundario);
-}
